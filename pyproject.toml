@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "gradient-sdk-python-example"
+version = "0.1.0"
+description = ""
+authors = ["Gradient developers"]
+readme = "README.md"
+packages = [{include = "gradient_sdk_python_example"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gradientai = "^1.0.0.dev2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
