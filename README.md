@@ -9,7 +9,6 @@ The code relies on environment variables. They can be injected through `dotenv` 
 ```
 GRADIENT_ACCESS_TOKEN=...
 GRADIENT_WORKSPACE_ID=...
-GRADIENT_API_URL=https://api.gradient.ai/api
 ```
 
 ## Usage
