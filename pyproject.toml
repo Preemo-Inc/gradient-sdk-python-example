@@ -7,10 +7,9 @@ readme = "README.md"
 packages = [{include = "gradient_sdk_python_example"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
-gradientai = "^1.0.0.dev2"
+python = "^3.10"
+gradientai = "^1.0.0.dev4"
 python-dotenv = "^1.0.0"
-
 
 [build-system]
 requires = ["poetry-core"]
