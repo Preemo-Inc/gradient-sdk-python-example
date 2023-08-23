@@ -14,13 +14,13 @@ files = [
 
 [[package]]
 name = "gradientai"
-version = "1.0.0.dev4"
+version = "1.0.0.dev5"
 description = "Gradient AI API"
 optional = false
 python-versions = ">=3.7,<4.0"
 files = [
-    {file = "gradientai-1.0.0.dev4-py3-none-any.whl", hash = "sha256:3ed10fe911c78c52ee1e9de6589238c1ffae346a29634bf3dddb2170ceabb8a0"},
-    {file = "gradientai-1.0.0.dev4.tar.gz", hash = "sha256:4e441b64b51b6905d3df836ac45c039a410173a5cbf88ec66394b03474a476aa"},
+    {file = "gradientai-1.0.0.dev5-py3-none-any.whl", hash = "sha256:4939a4e10fa41f720710c2fb945f9a9882c47bf5262143cfa1daebb3e7f9e2a7"},
+    {file = "gradientai-1.0.0.dev5.tar.gz", hash = "sha256:877597dae03b149aab421cf8aa44e7a77db3b1fea0e20350ad2f5888d5c331ee"},
 ]
 
 [package.dependencies]
@@ -151,4 +151,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "9e8744095a1ec1e52dee48f7fd2f37b30da4dddd93f33e8a4e06e3e460a58910"
+content-hash = "83ff379278cce28d9d92e46f2ff6fa1c7c2a3671c84c894d314838a390529e38"
