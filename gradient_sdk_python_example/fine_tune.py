@@ -1,6 +1,6 @@
 from typing import Literal
-from gradientai.models.train_model_request_body import TrainModelRequestBody
-from gradientai.models.train_model_success import TrainModelSuccess
+from gradientai.models.fine_tune_model_request_body import FineTuneModelRequestBody
+from gradientai.models.fine_tune_model_success import FineTuneModelSuccess
 from pprint import pprint
 from gradientai.api.models_api import (
     ModelsApi,
@@ -14,11 +14,11 @@ def fine_tune_model_adapter(
     samples: list[dict[Literal["inputs"], str]],
     stdout=True,
     workspace_id: str
-) -> TrainModelSuccess:
-    api_response: TrainModelSuccess = api_instance.train_model(
+) -> FineTuneModelSuccess:
+    api_response: FineTuneModelSuccess = api_instance.fine_tune_model(
         id=model_adapter_id,
         x_gradient_workspace_id=workspace_id,
-        train_model_request_body=TrainModelRequestBody(samples=samples),
+        fine_tune_model_request_body=FineTuneModelRequestBody(samples=samples),
     )
     if stdout:
         print("The response of ModelsApi->fine_tune_model:\n")

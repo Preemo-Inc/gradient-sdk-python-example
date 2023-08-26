@@ -31,7 +31,7 @@ with ApiClient(
     test_model_adapter = create_model_adapter(
         api_instance=api_instance,
         base_model_id=base_model.id,
-        name="testModel",
+        name="testModel123",
         workspace_id=workspace_id,
     )
 

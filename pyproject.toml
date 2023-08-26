@@ -8,7 +8,7 @@ packages = [{include = "gradient_sdk_python_example"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-gradientai = "^1.0.0.dev5"
+gradientai = "^1.0.0.dev6"
 python-dotenv = "^1.0.0"
 
 [build-system]
