@@ -15,8 +15,7 @@ GRADIENT_WORKSPACE_ID=...
 
 1. Clone this repo
 2. Run `poetry install`
-3. Run `poetry shell`
-4. Run `python gradient_sdk_python_example/list.py`
+3. Run `poetry run whole_flow`
 
 ## Example
 
