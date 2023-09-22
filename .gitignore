@@ -160,3 +160,8 @@ cython_debug/
 #.idea/
 
 .tool-versions
+.direnv
+.devenv
+
+# nixago: ignore-linked-files
+/.vscode/extensions.json
