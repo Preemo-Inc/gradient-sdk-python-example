@@ -8,7 +8,7 @@ packages = [{include = "gradient_sdk_python_example"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-gradientai = "^1.0.0"
+gradientai = "^1.1.0"
 python-dotenv = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
@@ -16,7 +16,8 @@ black = "22.3.0"
 mypy = "1.3.0"
 
 [tool.poetry.scripts]
-whole_flow = "gradient_sdk_python_example.whole_flow:main"
+embeddings = "gradient_sdk_python_example.embeddings:main"
+fine_tune = "gradient_sdk_python_example.fine_tune:main"
 
 [tool.black]
 black = "22.3.0"
