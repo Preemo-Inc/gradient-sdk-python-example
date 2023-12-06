@@ -24,7 +24,7 @@ def main() -> None:
     )
 
     for embedding in generate_embeddings_response.embeddings:
-        print(f"generated embedding: ${embedding.embedding}")
+        print(f"generated embedding: {embedding.embedding}")
 
     gradient.close()
 

@@ -15,7 +15,7 @@ GRADIENT_WORKSPACE_ID=...
 
 1. Clone this repo
 2. Run `poetry install`
-3. Run `poetry run fine_tune` to run fine tuning example, or `poetry run embeddings` to run embeddings example
+3. Run `poetry run fine_tune` to run fine-tuning example, or `poetry run embeddings` to run embeddings example
 
 ## Example
 
