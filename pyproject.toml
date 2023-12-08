@@ -7,8 +7,8 @@ readme = "README.md"
 packages = [{include = "gradient_sdk_python_example"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-gradientai = "^1.1.0"
+python = "^3.8.1"
+gradientai = "^1.2.0"
 python-dotenv = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
@@ -18,6 +18,7 @@ mypy = "1.3.0"
 [tool.poetry.scripts]
 embeddings = "gradient_sdk_python_example.embeddings:main"
 fine_tune = "gradient_sdk_python_example.fine_tune:main"
+guidance = "gradient_sdk_python_example.guidance:main"
 
 [tool.black]
 black = "22.3.0"
@@ -31,7 +32,6 @@ no_implicit_optional = true
 show_error_codes = true
 warn_return_any = true
 warn_unused_ignores = true
-
 
 [build-system]
 requires = ["poetry-core"]
