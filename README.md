@@ -19,6 +19,7 @@ GRADIENT_WORKSPACE_ID=...
    - `poetry run fine_tune`
    - `poetry run embeddings`
    - `poetry run guidance`
+   - `poetry run blocks`
 
 ## Example
 
