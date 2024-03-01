@@ -131,7 +131,7 @@ def run_analyze_sentiment_example(*, gradient: Gradient) -> None:
                 "Over the last decade or so, we've all stopped opening "
                 + "websites and started tapping app icons, but the age of "
                 + "the URL might be coming back."
-            )
+            ),
         },
     ]
 
@@ -211,6 +211,19 @@ def run_extract_example(*, gradient: Gradient) -> None:
     print("================\n")
 
 
+def run_extract_pdf_example(*, gradient: Gradient) -> None:
+    filepath = "resources/Lorem_Ipsum.pdf"
+    print("==== PDF Extraction ====")
+    print(f"Filepath: {filepath}\n")
+
+    print("Extracting content from the PDF...")
+    result = gradient.extract_pdf(filepath=filepath)
+
+    print(f"Text: {result['text']}")
+    print(f"Pages: {result['pages']}")
+    print("================\n")
+
+
 def main() -> None:
     gradient = Gradient()
 
@@ -219,6 +232,7 @@ def main() -> None:
     run_analyze_sentiment_example(gradient=gradient)
     run_personalize_example(gradient=gradient)
     run_extract_example(gradient=gradient)
+    run_extract_pdf_example(gradient=gradient)
 
     gradient.close()
 
