@@ -224,6 +224,18 @@ def run_extract_pdf_example(*, gradient: Gradient) -> None:
     print("================\n")
 
 
+def run_transcribe_example(*, gradient: Gradient) -> None:
+    filepath = "resources/Life_Kit.mp3"
+    print("==== Audio Transcription ====")
+    print(f"Filepath: {filepath}\n")
+
+    print("Transcribing audio from the file...")
+    result = gradient.transcribe_audio(filepath=filepath)
+
+    print(f"Text: {result['text']}")
+    print("================\n")
+
+
 def main() -> None:
     gradient = Gradient()
 
@@ -233,6 +245,7 @@ def main() -> None:
     run_personalize_example(gradient=gradient)
     run_extract_example(gradient=gradient)
     run_extract_pdf_example(gradient=gradient)
+    run_transcribe_example(gradient=gradient)
 
     gradient.close()
 

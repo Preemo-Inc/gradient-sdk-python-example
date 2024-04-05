@@ -16,10 +16,11 @@ GRADIENT_WORKSPACE_ID=...
 1. Clone this repo
 2. Run `poetry install`
 3. Run any of the following:
-   - `poetry run fine_tune`
-   - `poetry run embeddings`
-   - `poetry run guidance`
    - `poetry run blocks`
+   - `poetry run embeddings`
+   - `poetry run fine_tune`
+   - `poetry run guidance`
+   - `poetry run rag`
 
 ## Example
 
