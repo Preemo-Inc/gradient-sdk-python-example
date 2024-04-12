@@ -1,9 +1,9 @@
 from typing import List
 
 from dotenv import load_dotenv
+from gradientai import Gradient, Sample
 
 load_dotenv()
-from gradientai import Gradient, Sample
 
 
 def main() -> None:

@@ -1,4 +1,3 @@
-import os
 from dotenv import load_dotenv
 from gradientai import Gradient
 
@@ -18,7 +17,7 @@ def main():
     print(f"Created RAG collection with id: {rag_collection.id_}")
 
     rag_collection.add_files(filepaths=["resources/Life_Kit.mp3"])
-    print(f"Added file to RAG Collection with id: {rag_collection.id_}")
+    print(f"RAG collection files: {rag_collection.files}")
 
     gradient.close()
 

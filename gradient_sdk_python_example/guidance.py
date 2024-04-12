@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
+from gradientai import Gradient
 
 load_dotenv()
-from gradientai import Gradient
 
 
 def main() -> None:
