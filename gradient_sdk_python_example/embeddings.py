@@ -1,8 +1,10 @@
+import asyncio
+
 from dotenv import load_dotenv
+from gradientai import Gradient
 
 load_dotenv()
-from gradientai import Gradient
-import asyncio
+
 
 def main() -> None:
     print("running sync embeddings example")
@@ -29,6 +31,7 @@ def main() -> None:
 
     gradient.close()
 
+
 async def main_async() -> None:
     print("running async embeddings example")
     gradient = Gradient()
@@ -53,6 +56,7 @@ async def main_async() -> None:
         print(f"generated embedding: {embedding.embedding}")
 
     gradient.close()
+
 
 if __name__ == "__main__":
     main()

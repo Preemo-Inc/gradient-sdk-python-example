@@ -1,8 +1,6 @@
 from typing import List, Mapping
 
 from dotenv import load_dotenv
-
-load_dotenv()
 from gradientai import (
     AnalyzeSentimentParamsExample,
     ExtractParamsSchemaValue,
@@ -12,6 +10,8 @@ from gradientai import (
     SummarizeParamsExample,
     SummarizeParamsLength,
 )
+
+load_dotenv()
 
 
 def run_answer_example(*, gradient: Gradient) -> None:
