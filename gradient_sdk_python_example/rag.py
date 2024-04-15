@@ -19,6 +19,8 @@ def main():
     rag_collection.add_files(filepaths=["resources/Life_Kit.mp3"])
     print(f"RAG collection files: {rag_collection.files}")
 
+    rag_collection.delete()
+
     gradient.close()
 
 
